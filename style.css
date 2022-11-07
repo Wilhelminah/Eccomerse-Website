@@ -532,6 +532,125 @@ footer .copyright {
   text-align: center;
 }
 
+/*Shop Page*/
+
+#page-header {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*Product Page*/
+
+#details {
+  display: flex;
+  margin-top: 20px;
+}
+
+#details .single-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.s-image-grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-image-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#details .single-img-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#details .single-img-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#details .single-img-details h2 {
+  font-size: 26px;
+}
+
+#details .single-img-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#details .single-img-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#details .single-img-details input:focus {
+  outline: none;
+}
+
+#details .single-img-details button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#details .single-img-details span {
+  line-height: 25px;
+}
+
+/*Blog Page*/
+
+#blog-header {
+  background-image: url("img/banner/b19.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+/*Can do it in 2 ways*/
+#blog-header h2,
+#blog-header p {
+  color: #fff;
+}
+
 /* Media Query*/
 @media (max-width: 799px) {
   .section-p1 {
@@ -695,5 +814,21 @@ footer .copyright {
 
   footer .copyright {
     text-align: start;
+  }
+
+  /*Product Page*/
+
+  #details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #details .single-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #details .single-img-details {
+    width: 100%;
   }
 }
